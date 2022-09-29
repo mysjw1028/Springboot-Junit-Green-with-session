@@ -26,3 +26,12 @@ create table orders(
 ```
 
 ### 2.더미데이터
+
+INSERT INTO product(product_name, product_price, product_qty, created_at) VALUES('바나나', 3000, 98, NOW());
+INSERT INTO product(product_name, product_price, product_qty, created_at) VALUES('딸기', 2000, 100, NOW());
+
+INSERT INTO customer(username, PASSWORD, created_at) VALUES('ssar', '1234', NOW());
+INSERT INTO customer(username, PASSWORD, created_at) VALUES('cos', '1234', NOW());
+
+INSERT INTO orders(customer_id, product_id, created_at) VALUES(1, 1, NOW());
+INSERT INTO orders(customer_id, product_id, created_at) VALUES(2, 1, NOW());
