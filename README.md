@@ -5,7 +5,8 @@
 create table product(
     product_id int primary KEY auto_increment,
     product_name varchar(20) NOT null,
-    product_price INT NOT null,
+    product_price INT NOT NULL,
+    product_qty INT NOT NULL,
     created_at TIMESTAMP NOT null
 );
 
@@ -27,6 +28,8 @@ create table orders(
 
 ### 2.더미데이터
 
+=======
+```sql
 INSERT INTO product(product_name, product_price, product_qty, created_at) VALUES('바나나', 3000, 98, NOW());
 INSERT INTO product(product_name, product_price, product_qty, created_at) VALUES('딸기', 2000, 100, NOW());
 
@@ -34,4 +37,7 @@ INSERT INTO customer(username, PASSWORD, created_at) VALUES('ssar', '1234', NOW(
 INSERT INTO customer(username, PASSWORD, created_at) VALUES('cos', '1234', NOW());
 
 INSERT INTO orders(customer_id, product_id, created_at) VALUES(1, 1, NOW());
+<<<<<<< HEAD
 INSERT INTO orders(customer_id, product_id, created_at) VALUES(2, 1, NOW());
+```
+
